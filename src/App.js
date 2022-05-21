@@ -2,14 +2,17 @@ import Footer from "./Footer";
 import Header from "./Header";
 import PlayGame from "./PlayGame";
 import "./app.css"
+import MainContextProvider from "./Contexts/MainContext";
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <PlayGame />
-      <Footer />
-    </div>
+    <MainContextProvider>
+      <div className="App">
+        <Header />
+        <PlayGame />
+        <Footer />
+      </div>
+    </MainContextProvider>
   );
 }
 

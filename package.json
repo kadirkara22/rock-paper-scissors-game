@@ -34,5 +34,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "setupFiles": [
+    "./node_modules/react-native-gesture-handler/jestSetup.js"
+  ],
+  "transformIgnorePatterns": [
+    "/node_modules/(?!native-base)/"
+  ]
 }
