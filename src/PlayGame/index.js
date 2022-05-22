@@ -1,15 +1,19 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import { MainContext } from '../Contexts/MainContext'
 import GamePage from './GamePage'
 import Modal from './Modal'
 import SelectedIcon from './SelectedIcon'
 
 const PlayGame = () => {
-    const { show, setShow } = useContext(MainContext)
+    const { show, setShow, selected, playAgain } = useContext(MainContext)
+
     return (
         <>
-            {/*  <GamePage /> */}
-            <SelectedIcon />
+            {
+                !selected[0].id || playAgain === false ? <GamePage /> : <SelectedIcon />
+            }
+
+
             <Modal show={show} onClose={() => setShow(false)} />
         </>
     )
