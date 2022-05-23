@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext } from 'react'
 import { MainContext } from '../Contexts/MainContext'
 import GamePage from './GamePage'
 import Modal from './Modal'

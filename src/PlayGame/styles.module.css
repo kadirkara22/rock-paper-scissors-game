@@ -192,6 +192,7 @@
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 10px;
+  text-align: center;
 }
 .gamePlay button {
   background-color: #fff;
@@ -212,8 +213,4 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.winner {
-  box-shadow: 0 0 0 50px hsl(0deg 0% 100% / 7%),
-    0 0 0 100px hsl(0deg 0% 100% / 5%), 0 0 0 150px hsl(0deg 0% 100% / 3%);
 }

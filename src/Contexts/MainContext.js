@@ -92,7 +92,7 @@ const MainContextProvider = (props) => {
         score,
         scoreTable,
         number,
-        RandomNumber
+        RandomNumber,
     }
 
     return (

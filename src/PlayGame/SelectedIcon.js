@@ -43,7 +43,7 @@ const SelectedIcon = () => {
         <div className={styles.game}>
             <div className={styles.gameYou}>
                 <span className={styles.text}>YOU PICKED</span>
-                <div className={`${selectedIcon} ${styles.selectIcon} ${result === win ? styles.winner : ""}`}></div>
+                <div className={`${selectedIcon} ${styles.selectIcon} ${time === 0 && result === win ? "winner" : ""}`}></div>
             </div>
 
             <>
@@ -65,7 +65,7 @@ const SelectedIcon = () => {
 
                             <div className={styles.gameHouse}>
                                 <span className={styles.text}>THE HOUSE PICKED</span>
-                                <div className={`${styles.selectIcon} ${selectedGame[0].icon} ${result === lost ? styles.winner : ""}`}>
+                                <div className={`${styles.selectIcon} ${selectedGame[0].icon} ${time === 0 && result === lost ? "winner" : ""}`}>
 
                                 </div>
                             </div>

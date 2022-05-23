@@ -22,3 +22,7 @@
   border-color: #ec9e0e;
   box-shadow: inset 0 5px 6px grey, 0 8px #a46e0a;
 }
+.winner {
+  box-shadow: 0 0 0 50px hsl(0deg 0% 100% / 7%),
+    0 0 0 100px hsl(0deg 0% 100% / 5%), 0 0 0 150px hsl(0deg 0% 100% / 3%);
+}

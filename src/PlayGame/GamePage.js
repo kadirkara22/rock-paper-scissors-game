@@ -2,11 +2,14 @@ import React, { useContext } from 'react'
 import { MainContext } from '../Contexts/MainContext'
 import styles from "./styles.module.css"
 const GamePage = () => {
-    const { selected, setSelected, setPlayAgain } = useContext(MainContext)
+    const { setSelected, setPlayAgain } = useContext(MainContext)
+
 
     const handleClick = (e) => {
         setSelected(() => [{ id: e.target.id, iconName: e.target.title }])
         setPlayAgain(true)
+
+
 
     }
 
