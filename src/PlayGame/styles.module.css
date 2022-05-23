@@ -185,7 +185,7 @@
 .gamePlay {
   display: flex;
   flex-direction: column;
-  margin: 0 2rem;
+  margin: 0 2rem 0 1rem;
 }
 .gamePlay .text {
   text-transform: uppercase;
@@ -193,8 +193,27 @@
   font-weight: 700;
   margin-bottom: 10px;
 }
+.gamePlay button {
+  background-color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  color: rgb(26, 26, 56);
+}
+.gamePlay button:hover {
+  color: #dc2e4e;
+}
 .showResult {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.winner {
+  box-shadow: 0 0 0 50px hsl(0deg 0% 100% / 7%),
+    0 0 0 100px hsl(0deg 0% 100% / 5%), 0 0 0 150px hsl(0deg 0% 100% / 3%);
 }

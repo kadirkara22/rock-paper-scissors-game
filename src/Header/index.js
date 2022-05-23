@@ -1,6 +1,9 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { MainContext } from '../Contexts/MainContext'
 import styles from "./stles.module.css"
 const Header = () => {
+    const { score } = useContext(MainContext)
+
     return (
         <div className={styles.header}>
             <div className={styles.text}>
@@ -10,7 +13,7 @@ const Header = () => {
             </div>
             <div className={styles.scoreBox}>
                 <span>Score</span>
-                <div className={styles.score}>0</div>
+                <div className={styles.score}>{score}</div>
             </div>
         </div>
     )
